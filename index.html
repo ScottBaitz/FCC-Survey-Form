@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <meta name="description" content="Just some form">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <main id="main">
+    <header>
+      <h1 id="title">A Simple Survey</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida in fermentum et. Facilisis leo vel fringilla est ullamcorper eget nulla. Interdum
+        velit laoreet id donec ultrices tincidunt arcu. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Massa id neque aliquam vestibulum morbi blandit cursus risus. Viverra aliquet eget sit amet tellus cras adipiscing.
+        Massa vitae tortor condimentum lacinia. Nisl tincidunt eget nullam non nisi est. Eu turpis egestas pretium aenean pharetra magna ac placerat. Iaculis at erat pellentesque adipiscing commodo elit at. Integer eget aliquet nibh praesent
+        tristique. Etiam tempor orci eu lobortis elementum. Ut aliquam purus sit amet luctus venenatis lectus magna. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.
+        Senectus et netus et malesuada fames. Libero enim sed faucibus turpis in eu mi bibendum neque.
+      </p>
+    </header>
+    <section>
+      <form id="survey-form">
+
+        <div class="survey-form">
+          <label for="name" id="name-label">Enter your name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+
+        <div class="survey-form">
+          <label for="email" id="email-label">Enter your e-mail</label>
+          <input type="email" id="email" name="email" placeholder="jdoe@email.com" required />
+        </div>
+
+        <div class="survey-form">
+          <label for="number" id="number-label">Enter your age.</label>
+          <input type="number" id="number" name="number" min="18" max="65" placeholder="Age" required />
+        </div>
+
+        <div class="survey-form">
+          <select id="dropdown" name="options" class="form-control" required>
+            <option disabled selected value>Disabled option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="survey-form">
+
+          <input type="radio" id="radio1" name="multiplechoice" value="radio1" />
+          <label for="radio1">radio1</label>
+          <input type="radio" id="radio2" name="multiplechoice" value="radio2" />
+          <label for="radio2">radio2</label>
+          <input type="radio" id="radio3" name="multiplechoice" value="radio3" />
+          <label for="radio3">radio3</label>
+        </div>
+
+        <div class="survey-form">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label>
+        </div>
+
+        <div class="survey-form">
+          <textarea></textarea>
+        </div>
+
+        <div class="survey-form">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
